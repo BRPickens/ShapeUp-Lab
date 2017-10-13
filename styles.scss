@@ -1,0 +1,53 @@
+#sidebar {
+    width: 300px;
+    height: 600px;
+    background-color: darkblue;
+    float: left;;
+}
+
+#square {
+	width: 100px;
+	height: 100px;
+	background: #a0262a;
+}
+
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: #074C2A;
+}
+
+#circle {
+	width: 100px;
+	height: 100px;
+	background: #7830a5;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid #ffff99;
+	border-right: 100px solid transparent;
+}
+
+#field {
+    height: 600px;
+	width: 600px;
+	background-size: cover;
+    background-color: #3568c6;
+    margin-top: 20px;
+	padding: 20px;
+}
+
+#right-sidebar {
+	background-size: cover;
+	border: solid black thin;
+	height: 600px;
+	float: left;
+	margin: 0 auto;
+	padding: 0;
+
+}
