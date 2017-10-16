@@ -1,30 +1,28 @@
 label {
-  display: inline-block; }
+  display: block; }
 
 button {
-  border: none;
+  border: 2px #2496BB solid;
   width: 100px;
   height: 30px;
-  margin: 20px; }
+  margin: 20px;
+  background-color: lightblue; }
 
 input {
   height: 25px; }
 
-.wrapper {
+.container1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto); }
 
-.container-1 {
-  display: inline-block;
-}
-
 #container {
-  background-color: #049372;
+  background-color: lightblue;
   height: 600px;
   width: 600px;
- }
+  border: 2px #2496BB solid;
+  margin-right: 5em; }
 
 .inline {
   display: inline; }
@@ -34,25 +32,32 @@ input {
   position: absolute; }
 
 #square {
-  background: #e74c3c; }
+  background: #e74c3c;
+  width: 100px;
+  height: 100px; }
 
 #rectangle {
-  background-color: #2ecc71; }
+  background-color: #2ecc71;
+  width: 200px;
+  height: 100px; }
 
 #circle {
   width: 100px;
   height: 100px;
-  background: #9b59b6;
-  border-radius: 50px; }
+  background: purple;
+  border-radius: 50%; }
 
 #triangle-right {
   width: 0;
   height: 0;
-  border-bottom: 100px solid #f1c40f;
+  border-bottom: 100px solid red;
   border-right: 100px solid transparent; }
+
+.right-side {
+  display: block; }
 
 #r-height {
   position: relative;
-}
+  left: 32%; }
 
 /*# sourceMappingURL=styles.css.map */

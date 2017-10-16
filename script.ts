@@ -70,7 +70,6 @@ constructor(){
 size(size): void {
     this.div.style.height = `${size}px`;
     this.div.style.width = `${size}px`;
-    this.div.style.borderRadius = `${size/2}px`;
 }
 }
 

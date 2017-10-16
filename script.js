@@ -9,21 +9,15 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 document.addEventListener("DOMContentLoaded", function () {
-    // * Each of the insert buttons above should create a new instance of that particular shape, which should draw itself on the screen with the specified size and placed in a random location (object details are below)
     var RECTANGLE_BTN = document.getElementById('rectangle-btn');
     var SQUARE_BTN = document.getElementById('square-btn');
     var CIRCLE_BTN = document.getElementById('circle-btn');
     var TRIANGLE_BTN = document.getElementById('triangle-btn');
-    RECTANGLE_BTN.addEventListener('click', shapeCreator('rectangle')); //another function that gathers the parameters
+    RECTANGLE_BTN.addEventListener('click', shapeCreator('rectangle'));
     SQUARE_BTN.addEventListener('click', shapeCreator('square'));
     CIRCLE_BTN.addEventListener('click', shapeCreator('circle'));
     TRIANGLE_BTN.addEventListener('click', shapeCreator('triangle'));
-    //get each button by id and on click Each of the insert buttons above should create a new instance of that particular shape, which should draw itself on the screen with the specified size and placed in a random location (object details are below)
 });
-// * Rectangle: Inputs for width and height, and an insert button
-// * Square: Input for side length and an insert button
-// * Circle: Input for radius and an insert button
-// * Isoceles Right Triangle: Input for height and an insert button
 var Shape = /** @class */ (function () {
     function Shape() {
         var _this = this;
@@ -35,8 +29,8 @@ var Shape = /** @class */ (function () {
         });
     }
     Shape.prototype.draw = function () {
-        this.div.style.top = randomNumberOne() + "px"; //top should be between 1 to 475
-        this.div.style.left = randomNumberTwo() + "px"; //left should be between 453 to 916
+        this.div.style.top = randomNumberOne() + "px";
+        this.div.style.left = randomNumberTwo() + "px";
         document.getElementById('container').appendChild(this.div);
     };
     return Shape;
@@ -80,7 +74,6 @@ var Circle = /** @class */ (function (_super) {
     Circle.prototype.size = function (size) {
         this.div.style.height = size + "px";
         this.div.style.width = size + "px";
-        this.div.style.borderRadius = size / 2 + "px";
     };
     return Circle;
 }(Shape));
