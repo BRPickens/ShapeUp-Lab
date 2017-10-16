@@ -1,41 +1,58 @@
-#sidebar {
-  width: 300px;
+label {
+  display: inline-block; }
+
+button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin: 20px; }
+
+input {
+  height: 25px; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto); }
+
+.container-1 {
+  display: inline-block;
+}
+
+#container {
+  background-color: #049372;
   height: 600px;
-  background-color: darkblue;
-  float: left; }
+  width: 600px;
+ }
+
+.inline {
+  display: inline; }
+
+.shape {
+  margin: 20px;
+  position: absolute; }
 
 #square {
-  width: 100px;
-  height: 100px;
-  background: #a0262a; }
+  background: #e74c3c; }
 
 #rectangle {
-  width: 200px;
-  height: 100px;
-  background: #074C2A; }
+  background-color: #2ecc71; }
 
 #circle {
   width: 100px;
   height: 100px;
-  background: #7830a5;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
+  background: #9b59b6;
   border-radius: 50px; }
 
-#triangle-bottomleft {
+#triangle-right {
   width: 0;
   height: 0;
-  border-bottom: 100px solid #ffff99;
+  border-bottom: 100px solid #f1c40f;
   border-right: 100px solid transparent; }
 
-#field {
-  height: 600px;
-  width: 600px;
-  background-color: #3568c6;
-  margin-top: 20px;
-  padding: 20px; }
-
-#right-sidebar {
-  background-size: cover;}
+#r-height {
+  position: relative;
+}
 
 /*# sourceMappingURL=styles.css.map */

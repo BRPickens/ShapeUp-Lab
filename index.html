@@ -4,46 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shape Up or Not</title>
+
     <link rel="stylesheet" href="styles.css">
-    <title>Shape Up or Shape Out</title>
 </head>
 <body>
-    <div id = "left-sidebar">
-        <br><br>
-        <input id = "SQUARE_INPUT" placeholder = "length">
-        <br>
-        <button id = "SQUARE_BUTTON">Create Square</button>
-        <br><br>
-        <input id = "TRIANGLE_INPUT" placeholder= "height">
-        <br>
-        <button id = "TRIANGLE_BUTTON">Create Isoceles Right Triangle</button>
-        <br><br>
-        <input id = "RECTANGLE_WIDTH" placeholder = "width">
-        <br>
-        <input id = "RECTANGLE_HEIGHT" placeholder = "height">
-        <br>
-        <button id = "RECTANGLE_BUTTON">Create Rectangle</button>
-        <br><br>
-        <input id = "CIRCLE_INPUT" placeholder = "radius">
-        <br>
-        <button id = "CIRCLE_BUTTON">Create Circle</button>
-    </div>
-    <div id = "field"></div>
-    <div id ="right-sidebar">
-        <br>
-        Shape Name: <input class = "shapename" >
-        <br><br>
-        Width: <input class = "width">
-        <br><br>
-        Height: <input class = "height">
-        <br><br>
-        Radius: <input class="radius">
-        <br><br>
-        Area: <input class="area">
-        <br><br>
-        Perimeter: <input class="perimeter">
-    </div>
+    <div class="wrapper">
+        <div class="container-1">
+            <label for="Rectangle">
+                <label for="r-width"></label>
+                <button id="rectangle-btn">Rectangle</button>
+                    <input id="r-width" type="text" placeholder="Width"/>
+                <label for="r-height"></label>
+                    <input id="r-height"type="text" placeholder="Height"/>
+            </label>
 
-    <script src = script.js></script>
+            <label for="Square">
+                <button id="square-btn">Square</button>
+                <input id="square-input" type="text" placeholder="size">
+            </label>
+
+            <label for="Circle">
+                <button id="circle-btn">Circle</button>  
+                <input id="circle-input"type="text" placeholder="Radius">  
+            </label>
+
+            <label for="Isoceles Right Triangle">
+                <button id="triangle-btn">Isoceles Triangle</button>    
+                <input id= "triangle-input" type="text" placeholder="size">      
+            </label>
+        </div>
+        <div id = "container">
+
+        </div>
+
+      
+    </div>
+    
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
